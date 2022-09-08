@@ -1,0 +1,10 @@
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.twoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
