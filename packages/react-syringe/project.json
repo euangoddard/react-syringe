@@ -13,8 +13,11 @@
         "project": "packages/react-syringe/package.json",
         "entryFile": "packages/react-syringe/src/index.ts",
         "external": ["react/jsx-runtime"],
-        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "rollupConfig": "packages/react-syringe/rollup.config.js",
         "compiler": "babel",
+        "format": [
+          "esm"
+        ],
         "assets": [
           {
             "glob": "packages/react-syringe/README.md",
