@@ -1,6 +1,6 @@
 {
   "name": "react-syringe",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "peerDependencies": {
     "react": ">=18",
     "reflect-metadata": ">=0.1.13",
