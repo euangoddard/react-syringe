@@ -1,11 +1,12 @@
 {
+  "name": "react-syringe",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/react-syringe/src",
   "projectType": "library",
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@nrwl/web:rollup",
+      "executor": "@nrwl/rollup:rollup",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/packages/react-syringe",
@@ -15,9 +16,7 @@
         "external": ["react/jsx-runtime"],
         "rollupConfig": "packages/react-syringe/rollup.config.js",
         "compiler": "babel",
-        "format": [
-          "esm"
-        ],
+        "format": ["esm"],
         "assets": [
           {
             "glob": "packages/react-syringe/README.md",
@@ -36,7 +35,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/react-syringe"],
+      "outputs": ["{workspaceRoot}/coverage/packages/react-syringe"],
       "options": {
         "jestConfig": "packages/react-syringe/jest.config.ts",
         "passWithNoTests": true
